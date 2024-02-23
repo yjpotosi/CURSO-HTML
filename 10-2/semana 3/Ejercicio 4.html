@@ -1,0 +1,30 @@
+<script>
+
+    var genero = " ";
+    var edad = 0 ;
+    var tiempo = 0 ;
+    
+    genero = prompt(" Escriba el genero que le corresponde (M) Masculino o (F) Femenino" );
+    edad = parseInt(prompt("Escriba la edad que le corresponde "));
+    tiempo = parseInt(prompt(" Escriba el tiempo correspondido "));
+    
+    if (genero == "M" && edad >= 40 && tiempo <= 150 ) {
+        document.writeln("ingresa a la competencia ");
+    } else if (genero == "F" && edad <= 40 && tiempo <= 180 ){
+        document.writeln("ingresa a la competencia ");
+    }
+     
+     else if  (genero == "M" && edad >= 40 && tiempo >= 170 ) {
+        document.writeln("ingresa a la competencia ");
+    } else { document.writeln("no puede ingresar a a la competencia ");
+
+    }
+   
+    
+
+
+
+
+
+
+</script>

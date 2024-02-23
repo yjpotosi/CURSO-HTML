@@ -1,0 +1,33 @@
+<script>
+
+    //Una empresa desea calcular la comisión que le deben pagar a cada uno de los vendedores,
+    // al vendedor le corresponde el 2.5 % de la comisión,
+    //sobre aquellos artículos cuyos precios sean inferiores a $100.000 y
+    // el 75 % cuyo precio sea de $100.000 o más. El programa debe ser flexible para n vendedores.}
+ 
+    document.writeln("Yerson Jahir Potossi Riascos <BR>  "  )
+    var valoresmenores;
+    var valoresmayores;
+    var comision;
+
+
+    var v = parseInt(prompt("para cuantos vendedores se hara la comision"));
+
+    for(i=1; i<=v; i++){
+        valoresmenores = parseInt(prompt("Registrar el valor de ventas menores a 100000 "));
+        valoresmayores = parseInt(prompt(" Registrar el valor de ventas mayores a 100000 "));
+
+        comision = (valoresmenores * 2.5 / 100) + (valoresmayores * 75 / 100);
+
+
+        document.writeln(" La comision del vendedor " + i + " es: " + comision + "<br>"); 
+    }
+
+
+
+
+
+
+
+
+</script>

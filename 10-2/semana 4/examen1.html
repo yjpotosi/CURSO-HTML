@@ -1,0 +1,45 @@
+<script>
+    //Yerson Jahir Potosi Riascos 
+    
+    
+    // Problema de lanzamiento 
+
+//Leer por teclado dos valores los cuales corresponden al lanzamiento de dos dados.
+//Dependiendo de los valores imprimir: Si los dos valores son iguales imprimir “Par”. Si los
+//dos valores son desiguales imprimir “Lanzamiento”. Si la suma de los valores es menor a 6
+//imprimir “Juego Perdido”. Si algún valor es 1 o 2 imprimir “Puntaje Deficiente”. Si algún
+//valor es 5 o 6 imprimir “Puntaje Alto”
+
+
+var dado1 ;
+var dado2 ;
+
+ 
+dado1 = parseInt(prompt("ingrese el valor del dado 1 "));
+dado2 = parseInt(prompt("ingrese el valor del dado 2 ")) ; 
+
+
+
+if (dado1>=dado2 && dado2>=dado1 ){
+        document.writeln(" Par <BR> ");
+    }  
+    else  {
+        document.writeln("lanzamiento  <BR>"  );
+    };
+
+    if (dado1 + dado2 < 6 ) {
+    document.writeln("juego perdido <BR> ")
+}
+
+if( dado1<3 || dado2< 3 ){
+        document.writeln(" puntaje deficiente  <BR> ");
+
+    }
+
+ if( dado1 > 4 || dado2> 4 ){
+  document.writeln(" puntaje alto <BR> ");
+
+}
+   
+
+</script>

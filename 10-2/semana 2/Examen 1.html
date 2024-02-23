@@ -1,0 +1,19 @@
+<script>
+var horas = 0;
+var minutos = 0 ;
+var segundos = 0 ;
+var minutos_a_horas;
+var segundos_a_horas;
+var total_horas;
+horas=parseInt(prompt("  ingresar hora "),0);
+minutos=parseInt(prompt("  ingresar minutos"),0);
+segundos=parseInt(prompt("  ingresar segundos "),0);
+minutos_a_horas=minutos/60;
+segundos_a_horas=segundos/3600;
+total_horas=minutos_a_horas + segundos_a_horas + horas;
+var total_minutos = total_horas * 60;
+var total_segundos = total_horas * 3600;
+document.writeln("el tiempo total en horas es :"+ total_horas + "<BR>");
+document.writeln("el tiempo total en minutos :"+ total_minutos + "<BR>");
+document.writeln("el tiempo total segundos  :"+ total_segundos + "<BR>");
+</script>
